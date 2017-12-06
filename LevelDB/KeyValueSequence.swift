@@ -7,8 +7,8 @@
 import Foundation
 
 // TODO: DRY the crap out of this & KeySequence
-public struct KeyValueSequence<Key: KeyType> : SequenceType {
-    public typealias Generator = AnyGenerator<(Key, NSData?)>
+public struct KeyValueSequence<Key: KeyType> : Sequence {
+    public typealias Iterator = AnyIterator<(Key, Data?)>
     let db : Database
     let startKey : Key?
     let endKey : Key?
@@ -21,12 +21,12 @@ public struct KeyValueSequence<Key: KeyType> : SequenceType {
         self.descending = descending
     }
     
-    public func generate() -> Generator {
+    public func makeIterator() -> Iterator {
         let iterator = db.newIterator()
         if let key = startKey {
             key.withSlice { k in
                 iterator.seek(k)
-                if descending && iterator.isValid && db.compare(k, iterator.key!) == .OrderedAscending {
+                if descending && iterator.isValid && db.compare(k, iterator.key!) == .orderedAscending {
                     iterator.prev()
                 }
             }
@@ -35,19 +35,19 @@ public struct KeyValueSequence<Key: KeyType> : SequenceType {
         } else {
             iterator.seekToFirst()
         }
-        return anyGenerator({
+        return AnyIterator({
             if !iterator.isValid {
                 return nil
             }
             let currentKey = iterator.key!
             let currentValue = iterator.value
             if let key = self.endKey {
-                var result = NSComparisonResult.OrderedSame
+                var result = ComparisonResult.orderedSame
                 key.withSlice { k in
                     result = self.db.compare(currentKey, k)
                 }
-                if !self.descending && result == .OrderedDescending
-                    || self.descending && result == .OrderedAscending {
+                if !self.descending && result == .orderedDescending
+                    || self.descending && result == .orderedAscending {
                         return nil
                 }
             }

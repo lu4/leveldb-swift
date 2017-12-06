@@ -1,0 +1,6 @@
+framework module Pods_LevelDB_iOS {
+  umbrella header "Pods-LevelDB-iOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

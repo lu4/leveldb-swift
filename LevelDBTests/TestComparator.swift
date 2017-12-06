@@ -14,7 +14,7 @@ class TestComparator : Comparator {
     }
     }
     
-    func compare(a : LevelDB.Slice, _ b : LevelDB.Slice) -> NSComparisonResult {
+    func compare(_ a : LevelDB.Slice, _ b : LevelDB.Slice) -> ComparisonResult {
         let string1 = String(bytes: a.bytes, length: a.length)
         let string2 = String(bytes: b.bytes, length: b.length)
         return string1.compare(string2)

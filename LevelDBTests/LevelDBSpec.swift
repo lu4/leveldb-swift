@@ -14,17 +14,17 @@ import SwiftCheck
 let nonEmptyString = String.arbitrary.suchThat { !$0.isEmpty }
 
 enum DBOperation: CustomDebugStringConvertible {
-    case Put(key: String, value: [Int8])
-    case Get(key: String)
-    case Delete(key: String)
+    case put(key: String, value: [Int8])
+    case get(key: String)
+    case delete(key: String)
     
     var debugDescription: String {
         switch(self) {
-        case let .Put(k, s):
+        case let .put(k, s):
             return "Put \(k): \(s)"
-        case let .Get(k):
+        case let .get(k):
             return "Get \(k)"
-        case let .Delete(k):
+        case let .delete(k):
             return "Delete \(k)"
         }
     }
@@ -41,16 +41,16 @@ extension DBOperation: Arbitrary {
 
 extension Database: Arbitrary, CustomDebugStringConvertible {
     
-    public static func create(values: DictionaryOf<String, ArrayOf<Int8>>) -> Database {
-        let id = NSUUID().description
+    public static func create(_ values: DictionaryOf<String, ArrayOf<Int8>>) -> Database {
+        let id = UUID().description
         #if TARGET_OS_IPHONE
             let dirs = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.UserDomainMask, true)
             let directory = (dirs as [String])[0].stringByAppendingPathComponent(id)
         #else
-            let directory = NSString(string:NSTemporaryDirectory()).stringByAppendingPathComponent(id)
+            let directory = NSString(string:NSTemporaryDirectory()).appendingPathComponent(id)
         #endif
         do {
-            try NSFileManager.defaultManager().removeItemAtPath(directory)
+            try FileManager.default.removeItem(atPath: directory)
         } catch _ { /* swallow */ }
         let db = try! Database.createDatabase(directory, options: Options(createIfMissing: true))
         for (k, v) in values.getDictionary {
