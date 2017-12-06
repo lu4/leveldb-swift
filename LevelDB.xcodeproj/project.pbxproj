@@ -94,8 +94,6 @@
 		227B0937198297AB009C3BC5 /* logging.cc in Sources */ = {isa = PBXBuildFile; fileRef = 2253E0F619701FC500DCA0F0 /* logging.cc */; settings = {COMPILER_FLAGS = "-w"; }; };
 		227B0938198297AB009C3BC5 /* options.cc in Sources */ = {isa = PBXBuildFile; fileRef = 2253E0FA19701FC500DCA0F0 /* options.cc */; settings = {COMPILER_FLAGS = "-w"; }; };
 		227B0939198297AB009C3BC5 /* status.cc in Sources */ = {isa = PBXBuildFile; fileRef = 2253E0FE19701FC500DCA0F0 /* status.cc */; settings = {COMPILER_FLAGS = "-w"; }; };
-		227B093B198298A1009C3BC5 /* LevelDBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2275902F19531FBB009080EB /* LevelDBTests.swift */; };
-		227B093F198298EE009C3BC5 /* LevelDBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2275902F19531FBB009080EB /* LevelDBTests.swift */; };
 		22891BB419A8C234003EF513 /* Slice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22891BB319A8C234003EF513 /* Slice.swift */; };
 		22C36A57197D4D2000710563 /* LevelDB.h in Headers */ = {isa = PBXBuildFile; fileRef = 2275902219531FBA009080EB /* LevelDB.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		22C36A5D197D50D700710563 /* WriteBatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BA4A0B19697F2F00772430 /* WriteBatch.swift */; };
@@ -110,129 +108,12 @@
 		22E9BA021993BB16009EA25F /* KeyValueSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E9BA011993BB16009EA25F /* KeyValueSequence.swift */; };
 		22E9BA031993BB16009EA25F /* KeyValueSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E9BA011993BB16009EA25F /* KeyValueSequence.swift */; };
 		22EB9F2D198D035300A7DF7B /* c.h in Headers */ = {isa = PBXBuildFile; fileRef = 2253E09819701FC500DCA0F0 /* c.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		22EB9F2F198D13FB00A7DF7B /* TestComparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EB9F2E198D13FB00A7DF7B /* TestComparator.swift */; };
-		22EB9F30198D13FB00A7DF7B /* TestComparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EB9F2E198D13FB00A7DF7B /* TestComparator.swift */; };
 		22EB9F31198D15E400A7DF7B /* c.h in Headers */ = {isa = PBXBuildFile; fileRef = 2253E09819701FC500DCA0F0 /* c.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		22FAA2F61B78BC9000CD163B /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 22FAA2F51B78BC9000CD163B /* libc++.tbd */; };
 		22FAA2F81B78BC9A00CD163B /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 22FAA2F71B78BC9A00CD163B /* libc++.tbd */; };
-		22FAA2FA1B78BCB800CD163B /* SwiftCheck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22FAA2F91B78BCB800CD163B /* SwiftCheck.framework */; };
-		22FAA2FC1B78BCC600CD163B /* SwiftCheck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22FAA2FB1B78BCC600CD163B /* SwiftCheck.framework */; };
-		22FAA2FE1B78C28000CD163B /* LevelDBSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FAA2FD1B78C28000CD163B /* LevelDBSpec.swift */; };
-		22FAA2FF1B78C28000CD163B /* LevelDBSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FAA2FD1B78C28000CD163B /* LevelDBSpec.swift */; };
-		22FAA3041B799EF300CD163B /* SwiftCheck.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 22FAA2FB1B78BCC600CD163B /* SwiftCheck.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		22FAA3061B79A57600CD163B /* SwiftCheck.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 22FAA2F91B78BCB800CD163B /* SwiftCheck.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		26B2C57353A3FC02915E9E8F /* Pods_LevelDB_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A8B1382F74DC894140C1A95 /* Pods_LevelDB_iOS.framework */; };
-		45F2E961C0451765B88EFD3F /* Pods_LevelDBTests_OSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00D1CB5A6B0940351168CC09 /* Pods_LevelDBTests_OSX.framework */; };
-		66EBB44F8EDA158FABB12DFD /* Pods_LevelDBTests_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0B7404B4690F21E40EC01F4 /* Pods_LevelDBTests_iOS.framework */; };
-		6F57D4A8FDDBA133120FA6F9 /* Pods_LevelDB_OSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF478D51A1AC87780EED3424 /* Pods_LevelDB_OSX.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		227B093D198298EC009C3BC5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2275901419531FBA009080EB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 22C36A23197D4AB800710563;
-			remoteInfo = "LevelDB-iOS";
-		};
-		22C36A30197D4AB800710563 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2275901419531FBA009080EB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 22C36A23197D4AB800710563;
-			remoteInfo = LevelDB;
-		};
-		22C36A3D197D4AB900710563 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2275901419531FBA009080EB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 22C36A23197D4AB800710563;
-			remoteInfo = LevelDB;
-		};
-		22C36A3F197D4AC400710563 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2275901419531FBA009080EB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 22C36A23197D4AB800710563;
-			remoteInfo = "LevelDB-iOS";
-		};
-		22C36A41197D4ACB00710563 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2275901419531FBA009080EB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2253E1521971787B00DCA0F0;
-			remoteInfo = "LevelDB-OSX";
-		};
-		22C36A43197D4ACF00710563 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2275901419531FBA009080EB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 22C36A23197D4AB800710563;
-			remoteInfo = "LevelDB-iOS";
-		};
-		22C36A50197D4C4A00710563 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2275901419531FBA009080EB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 22C36A23197D4AB800710563;
-			remoteInfo = "LevelDB-iOS";
-		};
-		22C36A52197D4C5100710563 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2275901419531FBA009080EB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 22C36A23197D4AB800710563;
-			remoteInfo = "LevelDB-iOS";
-		};
-		22C36A59197D503600710563 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2275901419531FBA009080EB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 22C36A23197D4AB800710563;
-			remoteInfo = "LevelDB-iOS";
-		};
-		22C36A5B197D508C00710563 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2275901419531FBA009080EB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 22C36A23197D4AB800710563;
-			remoteInfo = "LevelDB-iOS";
-		};
-		22EB9F1F198C7F9E00A7DF7B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2275901419531FBA009080EB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 22C36A23197D4AB800710563;
-			remoteInfo = "LevelDB-iOS";
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		22FAA3031B799EE800CD163B /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				22FAA3041B799EF300CD163B /* SwiftCheck.framework in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		22FAA3051B79A56C00CD163B /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				22FAA3061B79A57600CD163B /* SwiftCheck.framework in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		00D1CB5A6B0940351168CC09 /* Pods_LevelDBTests_OSX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LevelDBTests_OSX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0E65842485FA470FCBEA2474 /* Pods-LevelDB-OSX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LevelDB-OSX.release.xcconfig"; path = "Pods/Target Support Files/Pods-LevelDB-OSX/Pods-LevelDB-OSX.release.xcconfig"; sourceTree = "<group>"; };
 		2235BDF0199123BD0008DA7E /* KeySequence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeySequence.swift; sourceTree = "<group>"; };
 		2240E47F195F007400B009EE /* Options.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Options.swift; sourceTree = "<group>"; };
 		2253E04A19701FC500DCA0F0 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
@@ -374,38 +255,22 @@
 		2259D72A1B2D2E8100F13088 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		2275902119531FBA009080EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2275902219531FBA009080EB /* LevelDB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LevelDB.h; sourceTree = "<group>"; };
-		2275902819531FBB009080EB /* LevelDBTests-OSX.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LevelDBTests-OSX.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2275902E19531FBB009080EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2275902F19531FBB009080EB /* LevelDBTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelDBTests.swift; sourceTree = "<group>"; };
 		2275915C19532794009080EB /* Database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		22881A0F1969406300EC031D /* Snapshot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Snapshot.swift; sourceTree = "<group>"; };
 		22881A1119694AF900EC031D /* Iterator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Iterator.swift; sourceTree = "<group>"; };
 		22891BB319A8C234003EF513 /* Slice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Slice.swift; sourceTree = "<group>"; };
 		22BA4A0B19697F2F00772430 /* WriteBatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteBatch.swift; sourceTree = "<group>"; };
 		22C36A24197D4AB800710563 /* LevelDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LevelDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		22C36A2E197D4AB800710563 /* LevelDBTests-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LevelDBTests-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22E499E01B4564CF00E4E86A /* dumpfile.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = dumpfile.cc; sourceTree = "<group>"; };
 		22E499E11B4564CF00E4E86A /* fault_injection_test.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = fault_injection_test.cc; sourceTree = "<group>"; };
 		22E499E41B45650D00E4E86A /* dumpfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dumpfile.h; sourceTree = "<group>"; };
 		22E499E71B45653F00E4E86A /* hash_test.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = hash_test.cc; sourceTree = "<group>"; };
 		22E9BA011993BB16009EA25F /* KeyValueSequence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyValueSequence.swift; sourceTree = "<group>"; };
-		22EB9F2E198D13FB00A7DF7B /* TestComparator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestComparator.swift; sourceTree = "<group>"; };
 		22FAA2F51B78BC9000CD163B /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		22FAA2F71B78BC9A00CD163B /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/usr/lib/libc++.tbd"; sourceTree = DEVELOPER_DIR; };
 		22FAA2F91B78BCB800CD163B /* SwiftCheck.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftCheck.framework; path = Carthage/Build/iOS/SwiftCheck.framework; sourceTree = "<group>"; };
 		22FAA2FB1B78BCC600CD163B /* SwiftCheck.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftCheck.framework; path = Carthage/Build/Mac/SwiftCheck.framework; sourceTree = "<group>"; };
-		22FAA2FD1B78C28000CD163B /* LevelDBSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelDBSpec.swift; sourceTree = "<group>"; };
-		34E7C5183A962661ABD5D574 /* Pods-LevelDB-OSX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LevelDB-OSX.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LevelDB-OSX/Pods-LevelDB-OSX.debug.xcconfig"; sourceTree = "<group>"; };
-		4B99EA1D34D8695B1F7D2CF2 /* Pods-LevelDBTests-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LevelDBTests-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-LevelDBTests-iOS/Pods-LevelDBTests-iOS.release.xcconfig"; sourceTree = "<group>"; };
-		89D43482E02D3E7BA01B7F3E /* Pods-LevelDBTests-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LevelDBTests-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LevelDBTests-iOS/Pods-LevelDBTests-iOS.debug.xcconfig"; sourceTree = "<group>"; };
-		91D1658827037B802FE770DF /* Pods-LevelDBTests-OSX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LevelDBTests-OSX.release.xcconfig"; path = "Pods/Target Support Files/Pods-LevelDBTests-OSX/Pods-LevelDBTests-OSX.release.xcconfig"; sourceTree = "<group>"; };
-		9A8B1382F74DC894140C1A95 /* Pods_LevelDB_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LevelDB_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D753D09EA05D6F900AF31741 /* Pods-LevelDB-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LevelDB-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-LevelDB-iOS/Pods-LevelDB-iOS.release.xcconfig"; sourceTree = "<group>"; };
-		DBF21EAE7BC67033B3760CB3 /* Pods-LevelDB-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LevelDB-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LevelDB-iOS/Pods-LevelDB-iOS.debug.xcconfig"; sourceTree = "<group>"; };
-		E471033B7A46B422D5A2C6E7 /* Pods-LevelDBTests-OSX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LevelDBTests-OSX.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LevelDBTests-OSX/Pods-LevelDBTests-OSX.debug.xcconfig"; sourceTree = "<group>"; };
-		F0B7404B4690F21E40EC01F4 /* Pods_LevelDBTests_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LevelDBTests_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F19C903C1FD7E7B0006EE70E /* SwiftCheck.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftCheck.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FF478D51A1AC87780EED3424 /* Pods_LevelDB_OSX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LevelDB_OSX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -414,16 +279,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				22FAA2F61B78BC9000CD163B /* libc++.tbd in Frameworks */,
-				6F57D4A8FDDBA133120FA6F9 /* Pods_LevelDB_OSX.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2275902519531FBB009080EB /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				22FAA2FC1B78BCC600CD163B /* SwiftCheck.framework in Frameworks */,
-				45F2E961C0451765B88EFD3F /* Pods_LevelDBTests_OSX.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,16 +287,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				22FAA2F81B78BC9A00CD163B /* libc++.tbd in Frameworks */,
-				26B2C57353A3FC02915E9E8F /* Pods_LevelDB_iOS.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		22C36A2B197D4AB800710563 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				22FAA2FA1B78BCB800CD163B /* SwiftCheck.framework in Frameworks */,
-				66EBB44F8EDA158FABB12DFD /* Pods_LevelDBTests_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -699,10 +544,6 @@
 				22FAA2F91B78BCB800CD163B /* SwiftCheck.framework */,
 				22FAA2F71B78BC9A00CD163B /* libc++.tbd */,
 				22FAA2F51B78BC9000CD163B /* libc++.tbd */,
-				FF478D51A1AC87780EED3424 /* Pods_LevelDB_OSX.framework */,
-				9A8B1382F74DC894140C1A95 /* Pods_LevelDB_iOS.framework */,
-				00D1CB5A6B0940351168CC09 /* Pods_LevelDBTests_OSX.framework */,
-				F0B7404B4690F21E40EC01F4 /* Pods_LevelDBTests_iOS.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -711,21 +552,17 @@
 			isa = PBXGroup;
 			children = (
 				2275901F19531FBA009080EB /* LevelDB */,
-				2275902C19531FBB009080EB /* LevelDBTests */,
 				2253E10E1970218800DCA0F0 /* Frameworks */,
 				2275901E19531FBA009080EB /* Products */,
 				2275915619532754009080EB /* vendor */,
-				AB1DE43CFB22AFAA89B37729 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
 		2275901E19531FBA009080EB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2275902819531FBB009080EB /* LevelDBTests-OSX.xctest */,
 				2253E1531971787B00DCA0F0 /* LevelDB.framework */,
 				22C36A24197D4AB800710563 /* LevelDB.framework */,
-				22C36A2E197D4AB800710563 /* LevelDBTests-iOS.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -755,46 +592,12 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		2275902C19531FBB009080EB /* LevelDBTests */ = {
-			isa = PBXGroup;
-			children = (
-				22EB9F2E198D13FB00A7DF7B /* TestComparator.swift */,
-				2275902F19531FBB009080EB /* LevelDBTests.swift */,
-				22FAA2FD1B78C28000CD163B /* LevelDBSpec.swift */,
-				2275902D19531FBB009080EB /* Supporting Files */,
-			);
-			path = LevelDBTests;
-			sourceTree = "<group>";
-		};
-		2275902D19531FBB009080EB /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				2275902E19531FBB009080EB /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		2275915619532754009080EB /* vendor */ = {
 			isa = PBXGroup;
 			children = (
 				2253E04919701FC500DCA0F0 /* leveldb */,
 			);
 			path = vendor;
-			sourceTree = "<group>";
-		};
-		AB1DE43CFB22AFAA89B37729 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				34E7C5183A962661ABD5D574 /* Pods-LevelDB-OSX.debug.xcconfig */,
-				0E65842485FA470FCBEA2474 /* Pods-LevelDB-OSX.release.xcconfig */,
-				DBF21EAE7BC67033B3760CB3 /* Pods-LevelDB-iOS.debug.xcconfig */,
-				D753D09EA05D6F900AF31741 /* Pods-LevelDB-iOS.release.xcconfig */,
-				E471033B7A46B422D5A2C6E7 /* Pods-LevelDBTests-OSX.debug.xcconfig */,
-				91D1658827037B802FE770DF /* Pods-LevelDBTests-OSX.release.xcconfig */,
-				89D43482E02D3E7BA01B7F3E /* Pods-LevelDBTests-iOS.debug.xcconfig */,
-				4B99EA1D34D8695B1F7D2CF2 /* Pods-LevelDBTests-iOS.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -827,12 +630,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2253E1661971787B00DCA0F0 /* Build configuration list for PBXNativeTarget "LevelDB-OSX" */;
 			buildPhases = (
-				330F153865570F4A0EFADA92 /* [CP] Check Pods Manifest.lock */,
 				2253E14E1971787B00DCA0F0 /* Sources */,
 				2253E14F1971787B00DCA0F0 /* Frameworks */,
 				2253E1501971787B00DCA0F0 /* Headers */,
 				2253E1511971787B00DCA0F0 /* Resources */,
-				3B150187364A98C2B23D6C8B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -843,38 +644,14 @@
 			productReference = 2253E1531971787B00DCA0F0 /* LevelDB.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		2275902719531FBB009080EB /* LevelDBTests-OSX */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2275903619531FBB009080EB /* Build configuration list for PBXNativeTarget "LevelDBTests-OSX" */;
-			buildPhases = (
-				E2DDD29A9AB5706428C9228F /* [CP] Check Pods Manifest.lock */,
-				2275902419531FBB009080EB /* Sources */,
-				2275902519531FBB009080EB /* Frameworks */,
-				2275902619531FBB009080EB /* Resources */,
-				22FAA3031B799EE800CD163B /* CopyFiles */,
-				1147F32B3988CAF2C833F595 /* [CP] Embed Pods Frameworks */,
-				383679472C3A4A2669C08E21 /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				22C36A42197D4ACB00710563 /* PBXTargetDependency */,
-			);
-			name = "LevelDBTests-OSX";
-			productName = LevelDBTests;
-			productReference = 2275902819531FBB009080EB /* LevelDBTests-OSX.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		22C36A23197D4AB800710563 /* LevelDB-iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 22C36A37197D4AB800710563 /* Build configuration list for PBXNativeTarget "LevelDB-iOS" */;
 			buildPhases = (
-				083E25A8E602236E0EA6AEA2 /* [CP] Check Pods Manifest.lock */,
 				22C36A1F197D4AB800710563 /* Sources */,
 				22C36A20197D4AB800710563 /* Frameworks */,
 				22C36A21197D4AB800710563 /* Headers */,
 				22C36A22197D4AB800710563 /* Resources */,
-				10F96C62C4CFDBDA230609C8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -884,37 +661,6 @@
 			productName = LevelDB;
 			productReference = 22C36A24197D4AB800710563 /* LevelDB.framework */;
 			productType = "com.apple.product-type.framework";
-		};
-		22C36A2D197D4AB800710563 /* LevelDBTests-iOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 22C36A3A197D4AB800710563 /* Build configuration list for PBXNativeTarget "LevelDBTests-iOS" */;
-			buildPhases = (
-				8E9D01422EA7F57D77139F96 /* [CP] Check Pods Manifest.lock */,
-				22C36A2A197D4AB800710563 /* Sources */,
-				22C36A2B197D4AB800710563 /* Frameworks */,
-				22C36A2C197D4AB800710563 /* Resources */,
-				22FAA3051B79A56C00CD163B /* CopyFiles */,
-				534D77BA66DFEDAAC381E6D6 /* [CP] Embed Pods Frameworks */,
-				B638B4ACBD54C89D1B58EA5C /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				22C36A31197D4AB800710563 /* PBXTargetDependency */,
-				22C36A3E197D4AB900710563 /* PBXTargetDependency */,
-				22C36A40197D4AC400710563 /* PBXTargetDependency */,
-				22C36A44197D4ACF00710563 /* PBXTargetDependency */,
-				22C36A51197D4C4A00710563 /* PBXTargetDependency */,
-				22C36A53197D4C5100710563 /* PBXTargetDependency */,
-				22C36A5A197D503600710563 /* PBXTargetDependency */,
-				22C36A5C197D508C00710563 /* PBXTargetDependency */,
-				227B093E198298EC009C3BC5 /* PBXTargetDependency */,
-				22EB9F20198C7F9E00A7DF7B /* PBXTargetDependency */,
-			);
-			name = "LevelDBTests-iOS";
-			productName = LevelDBTests;
-			productReference = 22C36A2E197D4AB800710563 /* LevelDBTests-iOS.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -928,21 +674,11 @@
 				TargetAttributes = {
 					2253E1521971787B00DCA0F0 = {
 						CreatedOnToolsVersion = 6.0;
-						LastSwiftMigration = 0800;
-					};
-					2275902719531FBB009080EB = {
-						CreatedOnToolsVersion = 6.0;
-						LastSwiftMigration = 0800;
-						TestTargetID = 2275901C19531FBA009080EB;
+						LastSwiftMigration = 0910;
 					};
 					22C36A23197D4AB800710563 = {
 						CreatedOnToolsVersion = 6.0;
-						LastSwiftMigration = 0800;
-					};
-					22C36A2D197D4AB800710563 = {
-						CreatedOnToolsVersion = 6.0;
-						LastSwiftMigration = 0800;
-						TestTargetID = 22C36A23197D4AB800710563;
+						LastSwiftMigration = 0910;
 					};
 				};
 			};
@@ -959,22 +695,13 @@
 			projectRoot = "";
 			targets = (
 				22C36A23197D4AB800710563 /* LevelDB-iOS */,
-				22C36A2D197D4AB800710563 /* LevelDBTests-iOS */,
 				2253E1521971787B00DCA0F0 /* LevelDB-OSX */,
-				2275902719531FBB009080EB /* LevelDBTests-OSX */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		2253E1511971787B00DCA0F0 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2275902619531FBB009080EB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -988,185 +715,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		22C36A2C197D4AB800710563 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		083E25A8E602236E0EA6AEA2 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-LevelDB-iOS-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		10F96C62C4CFDBDA230609C8 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LevelDB-iOS/Pods-LevelDB-iOS-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		1147F32B3988CAF2C833F595 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-LevelDBTests-OSX/Pods-LevelDBTests-OSX-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/SwiftCheck-macOS/SwiftCheck.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftCheck.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LevelDBTests-OSX/Pods-LevelDBTests-OSX-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		330F153865570F4A0EFADA92 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-LevelDB-OSX-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		383679472C3A4A2669C08E21 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LevelDBTests-OSX/Pods-LevelDBTests-OSX-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3B150187364A98C2B23D6C8B /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LevelDB-OSX/Pods-LevelDB-OSX-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		534D77BA66DFEDAAC381E6D6 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-LevelDBTests-iOS/Pods-LevelDBTests-iOS-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/SwiftCheck-iOS/SwiftCheck.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftCheck.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LevelDBTests-iOS/Pods-LevelDBTests-iOS-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8E9D01422EA7F57D77139F96 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-LevelDBTests-iOS-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B638B4ACBD54C89D1B58EA5C /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LevelDBTests-iOS/Pods-LevelDBTests-iOS-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E2DDD29A9AB5706428C9228F /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-LevelDBTests-OSX-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2253E14E1971787B00DCA0F0 /* Sources */ = {
@@ -1221,16 +770,6 @@
 				227B0937198297AB009C3BC5 /* logging.cc in Sources */,
 				227B0938198297AB009C3BC5 /* options.cc in Sources */,
 				227B0939198297AB009C3BC5 /* status.cc in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2275902419531FBB009080EB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				227B093B198298A1009C3BC5 /* LevelDBTests.swift in Sources */,
-				22EB9F30198D13FB00A7DF7B /* TestComparator.swift in Sources */,
-				22FAA2FF1B78C28000CD163B /* LevelDBSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1289,80 +828,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		22C36A2A197D4AB800710563 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				227B093F198298EE009C3BC5 /* LevelDBTests.swift in Sources */,
-				22EB9F2F198D13FB00A7DF7B /* TestComparator.swift in Sources */,
-				22FAA2FE1B78C28000CD163B /* LevelDBSpec.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		227B093E198298EC009C3BC5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 22C36A23197D4AB800710563 /* LevelDB-iOS */;
-			targetProxy = 227B093D198298EC009C3BC5 /* PBXContainerItemProxy */;
-		};
-		22C36A31197D4AB800710563 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 22C36A23197D4AB800710563 /* LevelDB-iOS */;
-			targetProxy = 22C36A30197D4AB800710563 /* PBXContainerItemProxy */;
-		};
-		22C36A3E197D4AB900710563 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 22C36A23197D4AB800710563 /* LevelDB-iOS */;
-			targetProxy = 22C36A3D197D4AB900710563 /* PBXContainerItemProxy */;
-		};
-		22C36A40197D4AC400710563 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 22C36A23197D4AB800710563 /* LevelDB-iOS */;
-			targetProxy = 22C36A3F197D4AC400710563 /* PBXContainerItemProxy */;
-		};
-		22C36A42197D4ACB00710563 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2253E1521971787B00DCA0F0 /* LevelDB-OSX */;
-			targetProxy = 22C36A41197D4ACB00710563 /* PBXContainerItemProxy */;
-		};
-		22C36A44197D4ACF00710563 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 22C36A23197D4AB800710563 /* LevelDB-iOS */;
-			targetProxy = 22C36A43197D4ACF00710563 /* PBXContainerItemProxy */;
-		};
-		22C36A51197D4C4A00710563 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 22C36A23197D4AB800710563 /* LevelDB-iOS */;
-			targetProxy = 22C36A50197D4C4A00710563 /* PBXContainerItemProxy */;
-		};
-		22C36A53197D4C5100710563 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 22C36A23197D4AB800710563 /* LevelDB-iOS */;
-			targetProxy = 22C36A52197D4C5100710563 /* PBXContainerItemProxy */;
-		};
-		22C36A5A197D503600710563 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 22C36A23197D4AB800710563 /* LevelDB-iOS */;
-			targetProxy = 22C36A59197D503600710563 /* PBXContainerItemProxy */;
-		};
-		22C36A5C197D508C00710563 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 22C36A23197D4AB800710563 /* LevelDB-iOS */;
-			targetProxy = 22C36A5B197D508C00710563 /* PBXContainerItemProxy */;
-		};
-		22EB9F20198C7F9E00A7DF7B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 22C36A23197D4AB800710563 /* LevelDB-iOS */;
-			targetProxy = 22EB9F1F198C7F9E00A7DF7B /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		2253E1671971787B00DCA0F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 34E7C5183A962661ABD5D574 /* Pods-LevelDB-OSX.debug.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -1397,13 +867,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "au.com.codesplice.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = LevelDB;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
 		2253E1681971787B00DCA0F0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0E65842485FA470FCBEA2474 /* Pods-LevelDB-OSX.release.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -1434,7 +904,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "au.com.codesplice.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = LevelDB;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -1520,51 +991,8 @@
 			};
 			name = Release;
 		};
-		2275903719531FBB009080EB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E471033B7A46B422D5A2C6E7 /* Pods-LevelDBTests-OSX.debug.xcconfig */;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = LevelDBTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				METAL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "au.com.codesplice.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		2275903819531FBB009080EB /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 91D1658827037B802FE770DF /* Pods-LevelDBTests-OSX.release.xcconfig */;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-				);
-				INFOPLIST_FILE = LevelDBTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				METAL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "au.com.codesplice.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
 		22C36A38197D4AB800710563 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DBF21EAE7BC67033B3760CB3 /* Pods-LevelDB-iOS.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
@@ -1597,14 +1025,14 @@
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_INSTALL_OBJC_HEADER = NO;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		22C36A39197D4AB800710563 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D753D09EA05D6F900AF31741 /* Pods-LevelDB-iOS.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
@@ -1632,58 +1060,9 @@
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_INSTALL_OBJC_HEADER = NO;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		22C36A3B197D4AB800710563 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 89D43482E02D3E7BA01B7F3E /* Pods-LevelDBTests-iOS.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = LevelDBTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "au.com.codesplice.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		22C36A3C197D4AB800710563 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4B99EA1D34D8695B1F7D2CF2 /* Pods-LevelDBTests-iOS.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
-				INFOPLIST_FILE = LevelDBTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "au.com.codesplice.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_VERSION = 3.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -1709,29 +1088,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		2275903619531FBB009080EB /* Build configuration list for PBXNativeTarget "LevelDBTests-OSX" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2275903719531FBB009080EB /* Debug */,
-				2275903819531FBB009080EB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
 		22C36A37197D4AB800710563 /* Build configuration list for PBXNativeTarget "LevelDB-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				22C36A38197D4AB800710563 /* Debug */,
 				22C36A39197D4AB800710563 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		22C36A3A197D4AB800710563 /* Build configuration list for PBXNativeTarget "LevelDBTests-iOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				22C36A3B197D4AB800710563 /* Debug */,
-				22C36A3C197D4AB800710563 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;

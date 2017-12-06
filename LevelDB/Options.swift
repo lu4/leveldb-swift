@@ -86,9 +86,16 @@ public struct Options {
 }
 
 public struct ReadOptions {
-    public let verifyChecksums = false
-    public let fillCache = true
-    public let snapshot : Snapshot? = nil
+    public let fillCache: Bool
+    public let verifyChecksums: Bool
+    public let snapshot : Snapshot?
+    
+    public init(fillCache: Bool = true, verifyChecksums: Bool = false, snapshot: Snapshot? = nil) {
+        self.snapshot = snapshot
+        self.fillCache = fillCache
+        self.verifyChecksums = verifyChecksums
+    }
+    
     func asCPointer() -> OpaquePointer {
         let opt = leveldb_readoptions_create();
         leveldb_readoptions_set_fill_cache(opt, fillCache ? 1 : 0)
@@ -101,7 +108,12 @@ public struct ReadOptions {
 }
 
 public struct WriteOptions {
-    public let sync = false
+    public let sync: Bool
+    
+    public init(sync: Bool = false) {
+        self.sync = sync
+    }
+    
     func asCPointer() -> OpaquePointer {
         let opt = leveldb_writeoptions_create();
         leveldb_writeoptions_set_sync(opt, sync ? 1 : 0)
